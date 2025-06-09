@@ -1,0 +1,77 @@
+# Smart Crop Health Detection System 🌿
+
+This is a machine learning project that uses deep learning and image classification to detect crop diseases from leaf images.
+
+### 👩‍💻 Project by:
+**S. Brinda Shree**  
+Solo Participant  
+**SA Engineering College**
+
+---
+
+## 🚀 Technologies Used
+
+- Python 3.x
+- TensorFlow / Keras
+- MobileNetV2 (pretrained CNN model)
+- OpenCV for image handling
+- NumPy, Matplotlib, Pandas
+- Git + GitHub
+- Google Colab (or Jupyter)
+
+---
+
+## 📁 Project Structure
+
+smart-crop-health-detection/
+│
+├── train.py # Model training script
+├── predict.py # Script to make predictions on test images
+├── crop_health_model.h5 # Trained model
+├── test.jpg # Sample test image
+├── architecture.md # Model architecture explanation
+├── data/ # Dataset (PlantVillage images)
+├── annotations.txt # Optional: dataset labels/notes
+├── requirements.txt # Python dependencies
+└── README.md # This file
+
+
+---
+
+## 🔬 How It Works
+
+1. `train.py` uses MobileNetV2 to train on PlantVillage dataset images.
+2. The model is saved as `crop_health_model.h5`.
+3. `predict.py` takes a test image (like `test.jpg`) and outputs the predicted disease class.
+
+---
+
+## 📦 Installation
+
+```bash
+pip install -r requirements.txt
+
+🖼️ Sample Prediction
+python predict.py --image test.jpg
+
+📊 Evaluation Metrics
+Accuracy: 95%+ on validation set
+
+Model: MobileNetV2 with fine-tuning
+
+Trained for 10 epochs with data augmentation
+
+📜 License
+This project is for educational and hackathon use only.
+
+
+---
+
+### 📄 `requirements.txt`
+
+```txt
+tensorflow
+numpy
+matplotlib
+opencv-python
+pandas
